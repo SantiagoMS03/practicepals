@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- Beat Label -->
+    <TextView
+        android:id="@+id/text_time_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Signature"
+        android:textSize="18sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Increment/Decrement Controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Decrement Button -->
+        <Button
+            android:id="@+id/button_time_signature_decrement"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:paddingHorizontal="0dp"
+            android:layout_marginEnd="10dp"/>
+        <!-- Increment Button -->
+        <Button
+            android:id="@+id/button_time_signature_increment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:paddingHorizontal="0dp"/>
+
+    </LinearLayout>
+
+    <!-- Time Signature Display -->
+    <TextView
+        android:id="@+id/text_time_signature_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4/4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingTop="20dp" />
+
+</LinearLayout>

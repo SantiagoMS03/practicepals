@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <!-- Display for the entered BPM -->
+    <TextView
+        android:id="@+id/display_bpm"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="-"
+        android:background="@drawable/display_background"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Numeric Keypad Layout -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/display_bpm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Numbers 1 to 9 -->
+        <Button android:text="1" android:id="@+id/button_1" />
+        <Button android:text="2" android:id="@+id/button_2" />
+        <Button android:text="3" android:id="@+id/button_3" />
+        <Button android:text="4" android:id="@+id/button_4" />
+        <Button android:text="5" android:id="@+id/button_5" />
+        <Button android:text="6" android:id="@+id/button_6" />
+        <Button android:text="7" android:id="@+id/button_7" />
+        <Button android:text="8" android:id="@+id/button_8" />
+        <Button android:text="9" android:id="@+id/button_9" />
+
+        <!-- Clear button -->
+        <Button android:text="C" android:id="@+id/button_clear" />
+
+        <!-- Number 0 -->
+        <Button android:text="0" android:id="@+id/button_0" />
+
+        <!-- Set button -->
+        <Button android:text="SET" android:id="@+id/button_set" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

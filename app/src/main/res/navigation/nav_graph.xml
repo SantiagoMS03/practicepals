@@ -1,0 +1,38 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MetronomeFragment">
+
+    <!-- Metronome Fragment -->
+    <fragment
+        android:id="@+id/MetronomeFragment"
+        android:name="com.zybooks.practicepals.fragments.MetronomeFragment"
+        android:label="Metronome"
+        tools:layout="@layout/fragment_metronome" />
+
+    <!-- Pieces Fragment -->
+    <fragment
+        android:id="@+id/PiecesFragment"
+        android:name="com.zybooks.practicepals.fragments.PiecesFragment"
+        android:label="Pieces"
+        tools:layout="@layout/fragment_pieces">
+        <action
+            android:id="@+id/action_PiecesFragment_to_PieceDetailsFragment"
+            app:destination="@id/PieceDetailsFragment" />
+    </fragment>
+
+    <!-- Piece Details Fragment -->
+    <fragment
+        android:id="@+id/PieceDetailsFragment"
+        android:name="com.zybooks.practicepals.fragments.PieceDetailsFragment"
+        android:label="Piece Details"
+        tools:layout="@layout/fragment_piece_details" />
+
+    <fragment
+        android:id="@+id/StopwatchFragment"
+        android:name="com.zybooks.practicepals.fragments.StopwatchFragment"
+        android:label="Stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+
+</navigation>

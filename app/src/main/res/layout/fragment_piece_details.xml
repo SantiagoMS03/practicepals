@@ -1,0 +1,67 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Part 1: Piece Information -->
+        <TextView
+            android:id="@+id/piece_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piece Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/composer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Composer Name"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/added_on_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Added on: Date"
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/time_practiced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Time Practiced"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+
+        <!-- Part 2: Practice Logs -->
+        <TextView
+            android:id="@+id/practice_logs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practice Logs"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/practice_logs_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
